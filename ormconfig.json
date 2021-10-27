@@ -1,0 +1,22 @@
+{
+    "type": "mysql",
+    "host": "0.0.0.0",
+    "port": 3306,
+    "username": "root",
+    "password": "root",
+    "database": "nestjs",
+    "entities": [
+      "dist/**/*.entity.{ts,js}"
+    ],
+    "migrations" : ["dist/database/migrations/**.js"],
+    "migrationsRun": false,
+    "cli": {
+      "entitiesDir": "dist/**/.entity{.ts,.js}",
+      "migrationsDir": "dist/database/migrations"
+    },
+    "synchronize": true,
+    "logging": true,
+    "seeds": [
+      "src/database/**/.seed{.js,.ts}"
+    ]
+  }

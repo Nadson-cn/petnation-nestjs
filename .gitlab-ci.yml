@@ -1,0 +1,26 @@
+# image: node:14.17.2
+
+# stages:
+#   - prepare
+#   - test
+
+# prepare:
+#   stage: prepare
+#   cache: 
+#     key: node-modules-cache
+#     paths: 
+#       - node_modules
+#   script: 
+#     - npm install
+
+# test: 
+#   stage: test
+#   cache: 
+#       key: node-modules-cache
+#       paths: 
+#         - node_modules
+#   script: 
+#     - npm run test:cov
+#   dependencies: 
+#     - prepare
+    
